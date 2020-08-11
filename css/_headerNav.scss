@@ -1,6 +1,5 @@
 header {
     nav {
-        border: 1px solid violet;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -8,8 +7,8 @@ header {
         margin-top: 56px;
 
         .logo {
-            background-color: forestgreen;
             height: 1.5rem;
+            margin-top: 1.7rem;
         }
 
         .menu-bars {
@@ -39,21 +38,39 @@ header {
         }
 
         ul {
-            padding-top: 20px;
-            padding-bottom: 15px;
             text-align: center;
-            background: dodgerblue;
 
             li {
                 display: inline;
-                color: #333;
+                padding-top: 20px;
+                font-weight: 500;
+                padding-bottom: 15px;
+                color: $veryDarkBlue;
                 font-size: 0.75rem;
                 text-decoration: none;
                 margin: 0 1.25rem;
 
                 &:hover {
                     cursor: pointer;
+                    color: $darkGrayishBlue;
+                    padding-top: 20px;
+                    padding-bottom: 15px;
                 }
+            }
+        }
+
+        .big-btn {
+            padding: 1.125rem 2rem;
+            border-radius: 1.5rem;
+            border: none;
+            background-color: $brightRed;
+            color: $veryPaleRed;
+            font-weight: 700;
+            box-shadow: 0px 4px 8px 0px #f3886a;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 60%;
             }
         }
     }

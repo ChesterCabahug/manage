@@ -17,7 +17,6 @@ body {
 }
 
 header nav {
-  border: 1px solid violet;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,8 +34,8 @@ header nav {
 }
 
 header nav .logo {
-  background-color: forestgreen;
   height: 1.5rem;
+  margin-top: 1.7rem;
 }
 
 header nav .menu-bars {
@@ -69,15 +68,15 @@ header nav .change .bar3 {
 }
 
 header nav ul {
-  padding-top: 20px;
-  padding-bottom: 15px;
   text-align: center;
-  background: dodgerblue;
 }
 
 header nav ul li {
   display: inline;
-  color: #333;
+  padding-top: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: #1d1e25;
   font-size: 0.75rem;
   text-decoration: none;
   margin: 0 1.25rem;
@@ -85,6 +84,25 @@ header nav ul li {
 
 header nav ul li:hover {
   cursor: pointer;
+  color: #9095a7;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+header nav .big-btn {
+  padding: 1.125rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #f25f3a;
+  color: #ffefeb;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 4px 8px 0px #f3886a;
+          box-shadow: 0px 4px 8px 0px #f3886a;
+  cursor: pointer;
+}
+
+header nav .big-btn:hover {
+  opacity: 60%;
 }
 
 /* Media Query: Large Smartphone (Vertical) */
