@@ -1,64 +1,42 @@
-/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
 
-* {
+//COLORS: Primary
+$color-bright-red: hsl(12, 88%, 59%);
+$color-light-red: #fff0ec;
+$color-dark-blue: hsl(228, 39%, 23%);
+$color-success: #2ecc71;
+$color-error: #e74c3c;
+
+//Neutrals
+$color-gray-blue: hsl(227, 12%, 61%);
+$color-darker-blue: hsl(233, 12%, 13%);
+$color-pale-red: hsl(13, 100%, 96%);
+$color-light-gray: hsl(0, 0%, 98%);
+
+//RESET
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Be Vietnam', sans-serif;
-    // width: 1110px;
-    // margin: 0 auto;
+    font-family: "Be Vietnam", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    color: $color-dark-blue;
+}
 
+p {
+    color: $color-gray-blue;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// h1 {
-//     font-size: $header1;
-// }
-// li,
-// button,
-// label,
-// input,
-// a,
-// p {
-//     font-size: $text;
-// }
-// h2 {
-//     font-size: $header2;
-// }
-// h3 {
-//     font-size: $header3;
-// }
-// h4,
-// h5 {
-//     font-size: $header4;
-// }
-
-// ul {
-//     list-style: none;
-// }
-// a {
-//     text-decoration: none;
-//     color: $gray-text;
-// }
+ul {
+    list-style: none;
+}
