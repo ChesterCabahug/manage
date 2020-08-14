@@ -190,6 +190,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media (max-width: 750px) {
@@ -205,6 +209,21 @@ main .heroImage {
   width: 100%;
 }
 
+main .heroText {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+@media (max-width: 750px) {
+  main .heroText {
+    text-align: center;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
 main .heroText h1 {
   border: 1px solid red;
   display: -webkit-box;
@@ -218,8 +237,22 @@ main .heroText h1 {
 }
 
 @media (max-width: 750px) {
-  main .heroText {
-    text-align: center;
+  main .heroText h1 {
+    margin: 1rem 0;
   }
+}
+
+main .heroText p {
+  font-size: 1.2rem;
+  margin-bottom: 2.125rem;
+}
+
+main .heroText .get-started-btn {
+  padding: 1.125rem 2rem;
+  border-radius: 1.41rem;
+  border: none;
+  background-color: #f25f3a;
+  font-weight: 700;
+  color: #fff0ec;
 }
 /*# sourceMappingURL=main.css.map */
