@@ -13,6 +13,24 @@ body {
   font-family: "Be Vietnam", sans-serif;
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  background: url(../../images/bg-tablet-pattern.svg) no-repeat;
+  background-position: top -20rem right -12rem;
+  background-size: 63rem;
+  width: 100%;
+  height: 200%;
+  z-index: -4;
+}
+
+@media (max-width: 750px) {
+  body::before {
+    background-size: 25rem;
+    background-position: top -4rem right -5rem;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -52,7 +70,7 @@ disables scroll when the user opens the hamburger menu
 }
 
 header nav {
-  border: 1px solid red;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +91,7 @@ header nav {
   margin-top: 3.5rem;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
+  padding: 0 1.5rem;
   /* ==============================================================
         made it fixed so that it can be summoned anywhere when scrolled up
         then hides when scrolled down
@@ -221,7 +240,13 @@ header nav ul li:hover {
 }
 
 header .hide {
-  top: -5rem;
+  top: -10rem;
+}
+
+@media (max-width: 750px) {
+  header .hide {
+    top: -5rem;
+  }
 }
 
 .mobile-items {
@@ -229,11 +254,12 @@ header .hide {
 }
 
 main {
-  border: 5px solid dodgerblue;
   min-height: 100vh;
   padding: 5rem 1.5rem 0 1.5rem;
   margin: auto;
   max-width: 70rem;
+  position: relative;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +301,9 @@ main .heroText {
 }
 
 main .heroText h1 {
-  border: 1px solid red;
+  font-size: 3.75rem;
+  margin: 2.25rem 0;
+  letter-spacing: -0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,17 +311,25 @@ main .heroText h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2.4rem;
 }
 
 @media (max-width: 750px) {
   main .heroText h1 {
+    letter-spacing: 0rem;
+    font-size: 2.4rem;
     margin: 1rem 0;
   }
 }
 
 main .heroText p {
   font-size: 1.2rem;
+  width: 88%;
   margin-bottom: 2.125rem;
+}
+
+@media (max-width: 750px) {
+  main .heroText p {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

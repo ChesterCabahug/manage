@@ -25,6 +25,20 @@ $color-light-gray: hsl(0, 0%, 98%);
 
 body {
     font-family: "Be Vietnam", sans-serif;
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../../images/bg-tablet-pattern.svg) no-repeat;
+        background-position: top -20rem right -12rem;
+        background-size: 63rem;
+        width: 100%;
+        height: 200%;
+        z-index: -4;
+        @media (max-width: 750px) {
+            background-size: 25rem;
+            background-position: top -4rem right -5rem;
+        }
+    }
 }
 
 h1,
