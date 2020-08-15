@@ -10,13 +10,15 @@ disables scroll when the user opens the hamburger menu
 
 header {
     nav {
-        // border: 1px solid red;
+        border: 1px solid red;
         display: flex;
         flex-direction: row;
         align-items: center;
         align-content: flex-end;
         justify-content: space-between;
+        max-width: 70rem;
         margin: auto;
+        margin-top: 3.5rem;
         transition: all 0.4s ease-in;
 
         /* ==============================================================
@@ -30,14 +32,36 @@ header {
 
         //================================================================
 
+        .logo {
+            align-self: flex-end;
+        }
+
         .hamburgerMenu {
             display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                padding: 0.7rem;
+                // border: 1px solid black;
+                font-size: 0.75rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-gray-blue;
+                }
+            }
         }
 
         @media (max-width: 750px) {
             /*==============================================================
             padding all the away around the nav bar
             */
+
+            margin-top: 0;
             padding: 2.5rem 1.5rem;
             //==============================================================
 
@@ -51,6 +75,12 @@ header {
                     background-color: $color-dark-blue;
                     margin: 3px 0;
                     transition: 0.4s;
+                }
+            }
+
+            ul {
+                li {
+                    font-size: 1rem;
                 }
             }
 
@@ -139,6 +169,10 @@ header {
 
             .showOverlay {
                 opacity: 1;
+            }
+
+            button {
+                display: none;
             }
         }
     }

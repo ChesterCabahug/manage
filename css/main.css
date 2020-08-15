@@ -27,6 +27,21 @@ ul {
   list-style: none;
 }
 
+.get-started-btn {
+  padding: 1.125rem 2rem;
+  border-radius: 1.41rem;
+  border: none;
+  background-color: #f25f3a;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #fff0ec;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  opacity: 70%;
+}
+
 /* ==============================================================
 disables scroll when the user opens the hamburger menu
 */
@@ -37,6 +52,7 @@ disables scroll when the user opens the hamburger menu
 }
 
 header nav {
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +68,9 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 70rem;
   margin: auto;
+  margin-top: 3.5rem;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   /* ==============================================================
@@ -65,8 +83,33 @@ header nav {
   top: 0;
 }
 
+header nav .logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 header nav .hamburgerMenu {
   display: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav ul li {
+  padding: 0.7rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: #9095a7;
 }
 
 @media (max-width: 750px) {
@@ -74,6 +117,7 @@ header nav .hamburgerMenu {
     /*==============================================================
             padding all the away around the nav bar
             */
+    margin-top: 0;
     padding: 2.5rem 1.5rem;
     /* ==============================================================
             to morph the hamburgerMenu into an X
@@ -91,6 +135,9 @@ header nav .hamburgerMenu {
     margin: 3px 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+  }
+  header nav ul li {
+    font-size: 1rem;
   }
   header nav .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 4.5px);
@@ -168,6 +215,9 @@ header nav .hamburgerMenu {
   header nav .showOverlay {
     opacity: 1;
   }
+  header nav button {
+    display: none;
+  }
 }
 
 header .hide {
@@ -183,7 +233,7 @@ main {
   min-height: 100vh;
   padding: 5rem 1.5rem 0 1.5rem;
   margin: auto;
-  max-width: 1110px;
+  max-width: 70rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,14 +295,5 @@ main .heroText h1 {
 main .heroText p {
   font-size: 1.2rem;
   margin-bottom: 2.125rem;
-}
-
-main .heroText .get-started-btn {
-  padding: 1.125rem 2rem;
-  border-radius: 1.41rem;
-  border: none;
-  background-color: #f25f3a;
-  font-weight: 700;
-  color: #fff0ec;
 }
 /*# sourceMappingURL=main.css.map */

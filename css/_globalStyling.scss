@@ -40,3 +40,18 @@ p {
 ul {
     list-style: none;
 }
+
+.get-started-btn {
+    padding: 1.125rem 2rem;
+    border-radius: 1.41rem;
+    border: none;
+    background-color: $color-bright-red;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: $color-light-red;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 70%;
+    }
+}
