@@ -28,6 +28,9 @@ let prevDirection = 0;
 
 const header = document.querySelector(".navbar");
 
+const threshold = 200;
+let toggled;
+
 const checkScroll = () => {
     curScroll = w.scrollY || doc.scrollTop;
     if (curScroll > prevScroll) {
@@ -39,18 +42,26 @@ const checkScroll = () => {
     }
 
     if (curDirection !== prevDirection) {
-        toggleHeader();
+        toggled = toggleHeader();
     }
-    prevDirection = curDirection;
+
+    if (toggled) {
+        prevDirection = curDirection;
+    }
+    
     prevScroll = curScroll;
 };
 
 const toggleHeader = () => {
-    if (curDirection === 2) {
+    toggled = true
+    if (curDirection === 2 && curScroll > threshold) {
         header.classList.add("hide");
     } else if (curDirection === 1) {
         header.classList.remove("hide");
+    } else {
+        toggled = false
     }
+    return toggled
 };
 
 window.addEventListener("scroll", checkScroll);
