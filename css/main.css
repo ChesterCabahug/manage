@@ -82,8 +82,8 @@ ul {
   .orangeEllipse::before {
     content: "";
     position: absolute;
-    width: 93.6%;
-    right: 11px;
+    width: 86%;
+    right: 0;
     margin-top: -0.73rem;
     height: 3.05rem;
     background-color: #fff0ec;
@@ -91,8 +91,10 @@ ul {
   }
 }
 
-.spacedNear {
-  letter-spacing: -0.04rem;
+@media (max-width: 750px) {
+  .spacedNear {
+    letter-spacing: -0.04rem;
+  }
 }
 
 @media (max-width: 321px) {
@@ -295,7 +297,6 @@ header .hide {
 }
 
 main {
-  border: 5px solid dodgerblue;
   min-height: 100vh;
   padding: 5rem 1.5rem 0 1.5rem;
   margin: auto;
@@ -381,7 +382,6 @@ main .heroText p {
   max-width: 70rem;
   min-height: 100vh;
   margin: auto;
-  border: 1px solid aqua;
   margin-top: 8.125rem;
   padding: 0 1.5rem;
 }
@@ -396,7 +396,6 @@ main .heroText p {
 }
 
 #whyManage .left {
-  border: 1px solid salmon;
   margin-right: 4.68rem;
   margin-bottom: 3.75rem;
 }
@@ -410,7 +409,6 @@ main .heroText p {
 #whyManage .left h2 {
   font-size: 2.5rem;
   margin-bottom: 2.125rem;
-  border: 1px solid salmon;
   letter-spacing: -0.1rem;
 }
 
@@ -434,13 +432,26 @@ main .heroText p {
 }
 
 #whyManage .right {
-  border: 1px solid springgreen;
   margin-left: 4.68rem;
 }
 
 @media (max-width: 750px) {
   #whyManage .right {
     margin-left: 0;
+  }
+}
+
+#whyManage .right .reasonParagraph {
+  padding-left: 6.5rem;
+  margin-bottom: 2.7rem;
+  margin-top: 1.8rem;
+}
+
+@media (max-width: 750px) {
+  #whyManage .right .reasonParagraph {
+    margin-top: 1.125rem;
+    padding-left: 0;
+    margin-bottom: 3.19rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

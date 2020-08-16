@@ -3,7 +3,7 @@
     max-width: 70rem;
     min-height: 100vh;
     margin: auto;
-    border: 1px solid aqua;
+    // border: 1px solid aqua;
     margin-top: 8.125rem;
     padding: 0 1.5rem;
 
@@ -12,7 +12,7 @@
     }
 
     .left {
-        border: 1px solid salmon;
+        // border: 1px solid salmon;
         margin-right: 4.68rem;
         margin-bottom: 3.75rem;
 
@@ -22,7 +22,7 @@
         h2 {
             font-size: 2.5rem;
             margin-bottom: 2.125rem;
-            border: 1px solid salmon;
+            // border: 1px solid salmon;
             letter-spacing: -0.1rem;
 
             @media (max-width: 750px) {
@@ -42,10 +42,26 @@
     }
 
     .right {
-        border: 1px solid springgreen;
+        // border: 1px solid springgreen;
         margin-left: 4.68rem;
         @media (max-width: 750px) {
             margin-left: 0;
+        }
+
+
+        .reasonParagraph {
+            // border: 1px solid slateblue;
+            padding-left: 6.5rem;
+            margin-bottom: 2.7rem;
+            margin-top: 1.8rem;
+
+            
+
+            @media (max-width: 750px) {
+                margin-top: 1.125rem;
+                padding-left: 0;
+                margin-bottom: 3.19rem;
+            }
         }
 
     }

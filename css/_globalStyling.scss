@@ -55,16 +55,9 @@ ul {
     list-style: none;
 }
 
-
-
-
-
 .bolder {
     font-weight: 700;
 }
-
-
-
 
 .get-started-btn {
     padding: 1.125rem 2rem;
@@ -81,9 +74,6 @@ ul {
     }
 }
 
-
-
-
 .orangeEllipse {
     padding: 0.75rem 1.7rem;
     display: inline-block;
@@ -93,7 +83,6 @@ ul {
     font-weight: 700;
     margin-right: 1.75rem;
 
-    
     @media (max-width: 750px) {
         padding: 0.75rem 1.2rem;
         margin-right: 0.4rem;
@@ -101,20 +90,20 @@ ul {
         &::before {
             content: "";
             position: absolute;
-            width: 93.6%;
-            right: 11px;
+            width: 86%;
+            right: 0;
             margin-top: -0.73rem;
             height: 3.05rem;
             background-color: $color-light-red;
             z-index: -2;
-            
         }
     }
 }
 
-
 .spacedNear {
-    letter-spacing: -0.04rem;
+    @media (max-width: 750px) {
+        letter-spacing: -0.04rem;
+    }
 
     @media (max-width: 321px) {
         // letter-spacing: -0.1rem;
