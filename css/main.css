@@ -82,7 +82,8 @@ ul {
   .orangeEllipse::before {
     content: "";
     position: absolute;
-    width: 86%;
+    width: 94%;
+    border-radius: 1.85rem 0px 0px 1.85rem;
     right: 0;
     margin-top: -0.73rem;
     height: 3.05rem;
@@ -101,6 +102,11 @@ ul {
   .spacedNear {
     font-size: 0.87rem;
   }
+}
+
+.container {
+  max-width: 70rem;
+  margin: auto;
 }
 
 /* ==============================================================
@@ -296,11 +302,9 @@ header .hide {
   position: relative;
 }
 
-main {
+main .container {
   min-height: 100vh;
   padding: 5rem 1.5rem 0 1.5rem;
-  margin: auto;
-  max-width: 70rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,7 +319,7 @@ main {
 }
 
 @media (max-width: 750px) {
-  main {
+  main .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -323,18 +327,18 @@ main {
   }
 }
 
-main .heroImage {
+main .container .heroImage {
   width: 100%;
 }
 
-main .heroText {
+main .container .heroText {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
 }
 
 @media (max-width: 750px) {
-  main .heroText {
+  main .container .heroText {
     text-align: center;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
@@ -342,7 +346,7 @@ main .heroText {
   }
 }
 
-main .heroText h1 {
+main .container .heroText h1 {
   font-size: 3.75rem;
   margin: 2.25rem 0;
   letter-spacing: -0.1rem;
@@ -356,38 +360,36 @@ main .heroText h1 {
 }
 
 @media (max-width: 750px) {
-  main .heroText h1 {
+  main .container .heroText h1 {
     letter-spacing: 0rem;
     font-size: 2.4rem;
     margin: 1rem 0;
   }
 }
 
-main .heroText p {
+main .container .heroText p {
   font-size: 1.2rem;
   width: 88%;
   margin-bottom: 2.125rem;
 }
 
 @media (max-width: 750px) {
-  main .heroText p {
+  main .container .heroText p {
     width: 100%;
   }
 }
 
-#whyManage {
+#whyManage .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 70rem;
   min-height: 100vh;
-  margin: auto;
   margin-top: 8.125rem;
   padding: 0 1.5rem;
 }
 
 @media (max-width: 750px) {
-  #whyManage {
+  #whyManage .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -395,60 +397,60 @@ main .heroText p {
   }
 }
 
-#whyManage .left {
+#whyManage .container .left {
   margin-right: 4.68rem;
   margin-bottom: 3.75rem;
 }
 
 @media (max-width: 750px) {
-  #whyManage .left {
+  #whyManage .container .left {
     margin-right: 0;
   }
 }
 
-#whyManage .left h2 {
+#whyManage .container .left h2 {
   font-size: 2.5rem;
   margin-bottom: 2.125rem;
   letter-spacing: -0.1rem;
 }
 
 @media (max-width: 750px) {
-  #whyManage .left h2 {
+  #whyManage .container .left h2 {
     font-size: 1.875rem;
     text-align: center;
     margin-bottom: 1.7rem;
   }
 }
 
-#whyManage .left p {
+#whyManage .container .left p {
   width: 80%;
 }
 
 @media (max-width: 750px) {
-  #whyManage .left p {
+  #whyManage .container .left p {
     width: 100%;
     text-align: center;
   }
 }
 
-#whyManage .right {
+#whyManage .container .right {
   margin-left: 4.68rem;
 }
 
 @media (max-width: 750px) {
-  #whyManage .right {
+  #whyManage .container .right {
     margin-left: 0;
   }
 }
 
-#whyManage .right .reasonParagraph {
+#whyManage .container .right .reasonParagraph {
   padding-left: 6.5rem;
   margin-bottom: 2.7rem;
   margin-top: 1.8rem;
 }
 
 @media (max-width: 750px) {
-  #whyManage .right .reasonParagraph {
+  #whyManage .container .right .reasonParagraph {
     margin-top: 1.125rem;
     padding-left: 0;
     margin-bottom: 3.19rem;

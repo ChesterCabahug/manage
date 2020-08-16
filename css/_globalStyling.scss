@@ -90,7 +90,8 @@ ul {
         &::before {
             content: "";
             position: absolute;
-            width: 86%;
+            width: 94%;
+            border-radius: 1.85rem 0px 0px 1.85rem;
             right: 0;
             margin-top: -0.73rem;
             height: 3.05rem;
@@ -109,4 +110,10 @@ ul {
         // letter-spacing: -0.1rem;
         font-size: 0.87rem;
     }
+}
+
+
+.container {
+    max-width: 70rem;
+    margin: auto;
 }
