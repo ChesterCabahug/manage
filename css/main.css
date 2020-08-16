@@ -60,6 +60,15 @@ ul {
   opacity: 70%;
 }
 
+.orangeEllipse {
+  padding: 0.75rem 1.7rem;
+  display: inline-block;
+  background-color: #f25f3a;
+  border-radius: 1.2rem;
+  color: #fff0ec;
+  font-weight: 700;
+}
+
 /* ==============================================================
 disables scroll when the user opens the hamburger menu
 */
