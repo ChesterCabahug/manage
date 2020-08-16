@@ -379,6 +379,29 @@ main .container .heroText p {
   }
 }
 
+#whyManage {
+  position: relative;
+}
+
+#whyManage::before {
+  content: "";
+  position: absolute;
+  background: url(../../images/bg-tablet-pattern.svg) no-repeat;
+  background-position: bottom 35rem left -22rem;
+  background-size: 63rem;
+  width: 100%;
+  height: 200%;
+  z-index: -4;
+}
+
+@media (max-width: 750px) {
+  #whyManage::before {
+    top: -22rem;
+    background-size: 25rem;
+    background-position: top -4rem right -15rem;
+  }
+}
+
 #whyManage .container {
   display: -webkit-box;
   display: -ms-flexbox;
