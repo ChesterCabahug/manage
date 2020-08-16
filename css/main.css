@@ -254,12 +254,12 @@ header .hide {
 }
 
 main {
+  border: 5px solid dodgerblue;
   min-height: 100vh;
   padding: 5rem 1.5rem 0 1.5rem;
   margin: auto;
   max-width: 70rem;
   position: relative;
-  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,5 +331,52 @@ main .heroText p {
   main .heroText p {
     width: 100%;
   }
+}
+
+#whyManage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70rem;
+  min-height: 100vh;
+  margin: auto;
+  border: 1px solid aqua;
+  margin-top: 8.125rem;
+}
+
+@media (max-width: 750px) {
+  #whyManage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#whyManage .left {
+  border: 1px solid salmon;
+  margin-right: 4.68rem;
+}
+
+#whyManage .left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.125rem;
+  border: 1px solid salmon;
+  letter-spacing: -0.1rem;
+}
+
+@media (max-width: 750px) {
+  #whyManage .left h2 {
+    font-size: 1.875rem;
+  }
+}
+
+#whyManage .left p {
+  width: 80%;
+}
+
+#whyManage .right {
+  border: 1px solid springgreen;
+  margin-left: 4.68rem;
 }
 /*# sourceMappingURL=main.css.map */
