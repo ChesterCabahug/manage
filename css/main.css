@@ -479,4 +479,14 @@ main .container .heroText p {
     margin-bottom: 3.19rem;
   }
 }
+
+#testimonials {
+  text-align: center;
+}
+
+#testimonials .swiper-container .swiper-wrapper .swiper-slide {
+  height: 13.56rem;
+  width: 33.43rem;
+  background-color: #fafafa;
+}
 /*# sourceMappingURL=main.css.map */
