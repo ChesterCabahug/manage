@@ -164,13 +164,15 @@ header {
                 bottom: 0;
                 left: -0.1rem;
                 right: 0;
-                opacity: 0;
+                opacity: 1;
+                display: none;
 
                 transition: opacity 0.2s ease-in-out;
             }
 
             .showOverlay {
-                opacity: 1;
+                display: block;
+                // opacity: 1;
             }
 
             button {

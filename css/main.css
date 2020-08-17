@@ -276,12 +276,13 @@ header nav ul li:hover {
     bottom: 0;
     left: -0.1rem;
     right: 0;
-    opacity: 0;
+    opacity: 1;
+    display: none;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
   }
   header nav .showOverlay {
-    opacity: 1;
+    display: block;
   }
   header nav button {
     display: none;
@@ -486,7 +487,6 @@ main .container .heroText p {
 
 #testimonials .swiper-container .swiper-wrapper .swiper-slide {
   height: 13.56rem;
-  width: 33.43rem;
-  background-color: #fafafa;
+  background-color: darksalmon;
 }
 /*# sourceMappingURL=main.css.map */

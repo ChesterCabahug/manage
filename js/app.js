@@ -1,7 +1,7 @@
 const hamburgerMenu = document.getElementById("hamburger");
 const mobileLi = document.querySelector(".collapsible");
-const overlay = document.querySelector(".overlay")
-const body = document.body
+const overlay = document.querySelector(".overlay");
+const body = document.body;
 
 // event listeners
 hamburgerMenu.addEventListener("click", () => {
@@ -9,10 +9,9 @@ hamburgerMenu.addEventListener("click", () => {
 
     mobileLi.classList.toggle("collapsed");
 
-    overlay.classList.toggle("showOverlay")
+    overlay.classList.toggle("showOverlay");
 
-    body.classList.toggle("noScroll")
-
+    body.classList.toggle("noScroll");
 });
 
 /* ==============================================================
@@ -48,20 +47,20 @@ const checkScroll = () => {
     if (toggled) {
         prevDirection = curDirection;
     }
-    
+
     prevScroll = curScroll;
 };
 
 const toggleHeader = () => {
-    toggled = true
+    toggled = true;
     if (curDirection === 2 && curScroll > threshold) {
         header.classList.add("hide");
     } else if (curDirection === 1) {
         header.classList.remove("hide");
     } else {
-        toggled = false
+        toggled = false;
     }
-    return toggled
+    return toggled;
 };
 
 window.addEventListener("scroll", checkScroll);
