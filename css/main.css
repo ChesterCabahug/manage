@@ -485,8 +485,34 @@ main .container .heroText p {
   text-align: center;
 }
 
-#testimonials .swiper-container .swiper-wrapper .swiper-slide {
-  height: 13.56rem;
-  background-color: darksalmon;
+#testimonials h2 {
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+#testimonials button {
+  margin-top: 3.19rem;
+}
+
+#testimonials .swiper-container .swiper-wrapper .swiper-slide .image-container {
+  background-color: transparent;
+}
+
+#testimonials .swiper-container .swiper-wrapper .swiper-slide .image-container img {
+  margin-bottom: -2rem;
+}
+
+#testimonials .swiper-container .swiper-wrapper .swiper-slide .testimonial-contents {
+  background-color: #fafafa;
+}
+
+#testimonials .swiper-container .swiper-wrapper .swiper-slide .testimonial-contents h3 {
+  padding-top: 3rem;
+}
+
+#testimonials .swiper-container .swiper-wrapper .swiper-slide .testimonial-contents p {
+  padding: 2rem 3rem;
+  padding-bottom: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

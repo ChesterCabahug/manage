@@ -1,13 +1,47 @@
 #testimonials {
     text-align: center;
+    // height: 80vh;
+    
+
+    h2 {
+        font-size: 2.5rem;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    button {
+        margin-top: 3.19rem;
+    }
 
 
     .swiper-container {
         .swiper-wrapper {
             .swiper-slide {
-                height: 13.56rem;
-                // width: 33.43rem;
-                background-color: darksalmon;
+                // height: 13.56rem;
+                // background-color: $color-light-gray;
+
+                .image-container {
+                    background-color: transparent;
+
+                    img {
+                        margin-bottom: -2rem;
+                    }
+                }
+
+                .testimonial-contents {
+                    background-color: $color-light-gray;
+
+                    h3 {
+                        padding-top: 3rem;
+                    }
+
+                    p {
+                        padding: 2rem 3rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                
             }
         }
     }
