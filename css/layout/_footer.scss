@@ -1,0 +1,156 @@
+footer {
+    background-color: $color-darker-blue;
+    padding: 3.81rem 0;
+
+    @media (max-width: 750px) {
+        padding: 3.18rem 1.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: [logoSocials] 1fr [linkGroup1] 1fr [linkGroup2] 1fr [newsEmailCopyright] 1fr [lastCol];
+        grid-template-rows: [firstRow] 1fr [secRow] 1fr [lastRow];
+
+        @media (max-width: 750px) {
+            grid-template-columns: [col1] 1fr [col2] 1fr [colEnd];
+            grid-template-rows: [searchBar] 1fr [links] 1fr [socials] 1fr [logo] 1fr [copyright] 1fr [rowEnd];
+        }
+        border: 1px solid salmon;
+        .whiteLogo {
+            grid-column-start: logoSocials;
+            grid-column-end: linkGroup1;
+            grid-row-start: firstRow;
+            grid-row-end: secRow;
+            align-self: start;
+            justify-self: start;
+            border: 1px solid salmon;
+
+            @media (max-width: 750px) {
+                grid-column-start: col1;
+                grid-column-end: colEnd;
+                grid-row-start: logo;
+                grid-row-end: copyright;
+                justify-self: center;
+                align-self: center;
+            }
+            
+        }
+
+        .socials {
+            grid-column-start: logoSocials;
+            grid-column-end: linkGroup1;
+            grid-row-start: secRow;
+            grid-row-end: lastRow;
+            justify-self: start;
+            align-self: end;
+            border: 1px solid salmon;
+
+            @media (max-width: 750px) {
+                grid-column-start: col1;
+                grid-column-end: colEnd;
+                grid-row-start: socials;
+                grid-row-end: logo;
+                justify-self: center;
+                align-self: center;
+            }
+
+        }
+
+        .link1 {
+            grid-column-start: linkGroup1;
+            grid-column-end: linkGroup2;
+            grid-row-start: firstRow;
+            grid-row-end: lastRow;
+            justify-self: center;
+            align-self: center;
+            border: 1px solid salmon;
+
+            @media (max-width: 750px) {
+                grid-column-start: col1;
+                grid-column-end: col2;
+                grid-row-start: links;
+                grid-row-end: socials;
+                justify-self: center;
+                align-self: start;
+            }
+        }
+        .link2 {
+            grid-column-start: linkGroup2;
+            grid-column-end: newsEmailCopyright;
+            grid-row-start: firstRow;
+            grid-row-end: lastRow;
+            justify-self: center;
+            align-self: center;
+            border: 1px solid salmon;
+
+            @media (max-width: 750px) {
+                grid-column-start: col2;
+                grid-column-end: colEnd;
+                grid-row-start: links;
+                grid-row-end: socials;
+                justify-self: center;
+                align-self: start;
+            }
+        }
+        .newsletter {
+            
+            align-self: start;
+            justify-self: end;
+            border: 1px solid salmon;
+
+            display: flex;
+
+            input {
+                padding: 1rem;
+                border: none;
+                border-radius: 2rem;
+                margin-right: 0.5rem;
+                color: $color-gray-blue;
+                @media (max-width: 750px) {
+                    padding: 1.5rem 2rem;
+                    width: 100%;
+                }
+            }
+
+            button {
+                padding: 1rem 2rem;
+                border: none;
+                border-radius: 2rem;
+                background-color: $color-bright-red;
+                color: $color-light-red;
+                font-weight: 700;
+                @media (max-width: 750px) {
+                    padding: 1.5rem 2rem;
+                    text-transform: uppercase;
+                }
+
+            }
+
+            @media (max-width: 750px) {
+                grid-column-start: col1;
+                grid-column-end: colEnd;
+                grid-row-start: searchBar;
+                grid-row-end: links;
+                align-self: start;
+                justify-self: stretch;
+            }
+        }
+        .copyright {
+            grid-column-start: newsEmailCopyright;
+            grid-column-end: lastCol;
+            grid-row-start: secRow;
+            grid-row-end: lastRow;
+            justify-self: end;
+            align-self: end;
+            border: 1px solid salmon;
+
+            @media (max-width: 750px) {
+                grid-column-start: col1;
+                grid-column-end: colEnd;
+                grid-row-start: copyright;
+                grid-row-end: rowEnd;
+                justify-self: center;
+                align-self: end;
+            }
+        }
+    }
+}
