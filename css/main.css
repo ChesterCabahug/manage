@@ -491,6 +491,12 @@ main .container .heroText p {
   margin-bottom: 5rem;
 }
 
+@media (max-width: 750px) {
+  #testimonials h2 {
+    font-size: 2rem;
+  }
+}
+
 #testimonials button {
   margin-top: 3.19rem;
 }
@@ -514,5 +520,77 @@ main .container .heroText p {
 #testimonials .swiper-container .swiper-wrapper .swiper-slide .testimonial-contents p {
   padding: 2rem 3rem;
   padding-bottom: 3rem;
+}
+
+#cta {
+  background-color: #f25f3a;
+  margin-top: 11.19rem;
+  position: relative;
+}
+
+#cta::before {
+  content: "";
+  position: absolute;
+  background: url(../../images/bg-simplify-section-desktop.svg) no-repeat;
+  background-position: top -9rem left 25rem;
+  background-size: 93rem;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  #cta::before {
+    background: url(../../images/bg-simplify-section-mobile.svg) no-repeat;
+    background-size: 8rem;
+    background-position: bottom left;
+  }
+}
+
+#cta .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 13.82rem;
+}
+
+@media (max-width: 750px) {
+  #cta .container {
+    height: 25.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+}
+
+#cta .container h2 {
+  color: white;
+  font-size: 2.5rem;
+  width: 50%;
+  padding-bottom: 1.62rem;
+  z-index: 4;
+}
+
+@media (max-width: 750px) {
+  #cta .container h2 {
+    width: 100%;
+  }
+}
+
+#cta .container button {
+  background-color: white;
+  color: #f25f3a;
+  z-index: 4;
 }
 /*# sourceMappingURL=main.css.map */
