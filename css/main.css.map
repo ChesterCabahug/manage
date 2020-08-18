@@ -8,7 +8,8 @@
         "layout/_mainHero.scss",
         "layout/_whyManageSection.scss",
         "layout/_testimonials.scss",
-        "layout/_cta.scss"
+        "layout/_cta.scss",
+        "layout/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
