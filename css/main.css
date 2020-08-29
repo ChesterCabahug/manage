@@ -146,6 +146,8 @@ header nav {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   padding: 0 1.5rem;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   /* ==============================================================
         made it fixed so that it can be summoned anywhere when scrolled up
         then hides when scrolled down
