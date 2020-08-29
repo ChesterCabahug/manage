@@ -142,10 +142,11 @@ header nav {
           justify-content: space-between;
   max-width: 70rem;
   margin: auto;
-  margin-top: 3.5rem;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   padding: 0 1.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   /* ==============================================================
