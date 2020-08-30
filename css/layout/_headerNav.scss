@@ -17,13 +17,15 @@ header {
         align-items: center;
         align-content: flex-end;
         justify-content: space-between;
-        max-width: 70rem;
-        margin: auto;
         transition: all 0.4s ease-in;
         padding: 0 1.5rem;
         padding-top: 3.5rem;
         padding-bottom: 3rem;
         backdrop-filter: blur(1rem);
+
+        
+        max-width: 70rem;
+        margin: auto;
 
         /* ==============================================================
         made it fixed so that it can be summoned anywhere when scrolled up
