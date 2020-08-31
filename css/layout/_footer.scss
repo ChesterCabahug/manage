@@ -16,7 +16,7 @@ footer {
             font-size: 1rem;
             font-weight: 400;
 
-            &:first-child{
+            &:first-child {
                 margin-top: 0;
             }
 
@@ -47,7 +47,6 @@ footer {
                 justify-self: center;
                 align-self: center;
             }
-            
         }
 
         .socials {
@@ -64,18 +63,16 @@ footer {
             width: 50%;
             justify-content: space-between;
             align-items: center;
-            
+
             @media (max-width: 750px) {
                 width: 100%;
                 justify-content: space-around;
-
             }
 
             img {
                 width: 1.25rem;
                 @media (max-width: 750px) {
                     width: 2rem;
-
                 }
             }
 
@@ -87,7 +84,6 @@ footer {
                 justify-self: center;
                 align-self: center;
             }
-
         }
 
         .link1 {
@@ -127,7 +123,6 @@ footer {
             }
         }
         .newsletter {
-            
             align-self: start;
             justify-self: end;
             // border: 1px solid salmon;
@@ -157,7 +152,6 @@ footer {
                     padding: 1.5rem 2rem;
                     text-transform: uppercase;
                 }
-
             }
 
             @media (max-width: 750px) {
