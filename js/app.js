@@ -26,6 +26,7 @@ let curDirection = 0;
 let prevDirection = 0;
 
 const header = document.querySelector(".navbar");
+const headerbg = document.querySelector("#header")
 
 const threshold = 200;
 let toggled;
@@ -55,8 +56,12 @@ const toggleHeader = () => {
     toggled = true;
     if (curDirection === 2 && curScroll > threshold) {
         header.classList.add("hide");
+        headerbg.classList.add("hide")
+
     } else if (curDirection === 1) {
         header.classList.remove("hide");
+        headerbg.classList.remove("hide")
+
     } else {
         toggled = false;
     }
