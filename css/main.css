@@ -124,7 +124,6 @@ disables scroll when the user opens the hamburger menu
 }
 
 header {
-  border: 1px solid red;
   height: 4rem;
   position: fixed;
   left: 0;
